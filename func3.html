@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <p id="demo">dispaly here.</p>
+</head>
+
+<body>
+    <script>
+        function calcGeometry(radius) {
+            var circumference = Math.PI * 2 * radius;
+            document.getElementById("demo").innerHTML="The circumference is " + circumference;
+            var area = Math.PI * radius * radius;
+            document.getElementById("demo").innerHTML="The area is " + area;
+        }
+        calcGeometry(10);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <p id="demo">dispaly here.</p>
+</head>
+
+<body>
+    <script>
+        function calculatesupply(age, amount) {
+            var maxAge = 100;
+            var totalNeeded = (amount * 365) * (maxAge - age);
+            document.getElementById("demo").innerHTML = "You will need " + totalNeeded + " to last you until the ripe old age of " + maxAge;
+        }
+        calculatesupply(10, 400);
+        calculatesupply(20, 200);
+        calculatesupply(30, 100);
+    </script>
+</body>
+
+</html>
